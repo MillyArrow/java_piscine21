@@ -2,6 +2,7 @@ package ex01;
 
 public class UserIdsGenerator {
 	private static UserIdsGenerator instance;
+	private static Integer id = 0;
 
 	private UserIdsGenerator() { }
 	public static UserIdsGenerator getInstance(){
@@ -9,5 +10,8 @@ public class UserIdsGenerator {
 			instance = new UserIdsGenerator();
 		}
 		return instance;
+	}
+	public Integer generateId(){
+		return ++id;
 	}
 }

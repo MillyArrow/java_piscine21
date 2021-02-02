@@ -12,7 +12,7 @@ public class User {
 	}
 
 	User(Integer identifier, String name, Integer balance) {
-		Identifier = identifier;
+		Identifier = UserIdsGenerator.getInstance().generateId();
 		Name = name;
 		Balance = balance;
 		if (Balance < 0) {
