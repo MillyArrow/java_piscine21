@@ -17,7 +17,7 @@ public class User {
 		Name = name;
 		Balance = balance;
 		if (Balance < 0) {
-			System.out.println("Balance is negative");
+			System.err.println("Balance is negative");
 			System.exit(-1);
 		}
 	}
